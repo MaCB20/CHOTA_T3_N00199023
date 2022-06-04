@@ -1,0 +1,25 @@
+﻿<body>
+    <h1>HISTORIAL CLINICO</h1>
+    <table class = "table">
+            <thead>
+                <tr>
+                    <th>Código Registro</th>
+                    <td>Nombre Mascota</td>
+                    <th>Fecha Registro</th>
+                    <th>Dueño</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CodRegistro</td>
+                        <td>@item.mascota.NombreMascota</td>
+                        <td>@item.FechaRegistro</td>
+                        <td>@item.mascota.dueño.Nombre</td>
+                    </tr>
+                }
+            </tbody>
+                <h1>Total: @ViewBag.Total</h1>
+        </table>
+</body>

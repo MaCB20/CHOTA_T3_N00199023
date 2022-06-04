@@ -1,0 +1,88 @@
+{
+  "id": "76d7dfb3-47a8-4446-afe8-313fb7d0978c",
+  "version": "2.0",
+  "name": "Pruebas_T3",
+  "url": "https://localhost:7114/",
+  "tests": [{
+    "id": "641f0c87-9a0a-4bd9-84f5-f87e3db13c8c",
+    "name": "Login Correcto",
+    "commands": [{
+      "id": "d3e086c8-89ac-491c-8a21-73deb6190143",
+      "comment": "",
+      "command": "open",
+      "target": "Auth/Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecb7e49e-e516-4406-9b83-5ff3a62fe7da",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=.mb-3:nth-child(2) > #username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f12ace56-2e00-442d-aa0f-04673b693c09",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=.mb-3:nth-child(2) > #username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "f222a841-5670-44dd-b8fc-7eecab81e44d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(3) > #username",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > #username", "css:finder"],
+        ["xpath=(//input[@id='username'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7887dcd-0add-425f-8c7b-ce2c240ffbf4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > #username",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > #username", "css:finder"],
+        ["xpath=(//input[@id='username'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "550c020a-e3a1-4d98-a224-c86fddc1b91f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Acceder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b79aecc7-21ab-4ad6-8f5e-163b11b35bbb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["641f0c87-9a0a-4bd9-84f5-f87e3db13c8c"]
+  }],
+  "urls": ["https://localhost:7114/"],
+  "plugins": []
+}
